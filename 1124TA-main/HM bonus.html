@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .form-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    .form-item {
+        margin-bottom: 10px;
+    }
+    .form-item input[type="text"],
+    .form-item input[type="password"],
+    .form-item textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .form-item textarea {
+        resize: none;
+    }
+    .form-item input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .form-item input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <form action="">
+        <div class="form-item">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        </div>
+        <div class="form-item">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div class="form-item">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password..">
+        </div>
+        <div class="form-item">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+        </div>
+        <div class="form-item">
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" placeholder="Write something about yourself.." style="height:200px"></textarea>
+        </div>
+        <div class="form-item">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
